@@ -214,6 +214,17 @@ public class NIOServer {
 }
 
 ```
+
+---
+
+### 上2张图说明下OIO和NIO区别
+OIO系统
+![image.png](https://upload-images.jianshu.io/upload_images/3876371-b98378a14ab68c11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+NIO系统
+![image.png](https://upload-images.jianshu.io/upload_images/3876371-7fb8d3733a3d1ab7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ---
 ### NIO API总结
 * Selector  在nio中最核心的类，用于监控通道状态， 核心方法
@@ -237,15 +248,6 @@ serverChannel.register(selector, SelectionKey.OP_ACCEPT);
  //  将通道管理器和该通道绑定，监听读事件
  channel.register(this.selector, SelectionKey.OP_READ);
 ```
----
-
-### 上2张图说明下OIO和NIO区别
-OIO系统
-![image.png](https://upload-images.jianshu.io/upload_images/3876371-b98378a14ab68c11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-NIO系统
-![image.png](https://upload-images.jianshu.io/upload_images/3876371-7fb8d3733a3d1ab7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
 
 ### Netty线程源码分析
 
