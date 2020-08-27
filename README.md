@@ -247,6 +247,11 @@ NIO系统
 ![image.png](https://upload-images.jianshu.io/upload_images/3876371-7fb8d3733a3d1ab7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+### Netty线程源码分析
+
+用嘴说吧.......打字太麻烦
+
+
 ### Netty线程模型图
 
 ![image.png](https://upload-images.jianshu.io/upload_images/3876371-e152f10606b63a86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
