@@ -216,12 +216,14 @@ public class NIOServer {
 ```
 ---
 ### NIO API总结
-* Selector  在nio中最核心的类，用于检查通道状态， 核心方法
+* Selector  在nio中最核心的类，用于监控通道状态， 核心方法
 ```
 // 监听通道状态变化，变化时候返回，否则阻塞
 selector.select();
 //返回变化的通道
-selector.selectedKeys()；
+selector.selectedKeys();
+//用于唤醒select阻塞状态
+selector.wakeup();
 ```
 * ServerSocketChannel  socket监听通道
  ```
